@@ -646,6 +646,9 @@
             user-select: none;
             min-height: 50px;
             position: relative;
+            margin: 0;
+            font-weight: 500;
+            color: #1f2937;
         }
 
         .checkbox-item:hover,
@@ -671,8 +674,8 @@
             accent-color: #764ba2;
         }
 
-        .checkbox-item label,
-        .radio-item label {
+        .checkbox-item span,
+        .radio-item span {
             cursor: pointer;
             font-size: 0.9rem;
             color: #1f2937;
@@ -681,11 +684,6 @@
             flex: 1;
             display: flex;
             align-items: center;
-        }
-
-        .checkbox-item input[type="checkbox"] + label,
-        .radio-item input[type="radio"] + label {
-            cursor: pointer;
         }
 
         .submit-button {
@@ -1215,26 +1213,26 @@
                         <div class="form-group">
                             <label>Types of projects you manage (select all that apply)</label>
                             <div class="checkbox-group">
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="digital-transform" name="projectType[]" value="Digital Transformation">
-                                    <label for="digital-transform">Digital Transformation</label>
-                                </div>
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="infrastructure" name="projectType[]" value="Infrastructure">
-                                    <label for="infrastructure">Infrastructure / Giga-Projects</label>
-                                </div>
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="software" name="projectType[]" value="Software Development">
-                                    <label for="software">Software Development</label>
-                                </div>
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="government" name="projectType[]" value="Government">
-                                    <label for="government">Government / Public Sector</label>
-                                </div>
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="enterprise" name="projectType[]" value="Enterprise Transformation">
-                                    <label for="enterprise">Enterprise Transformation</label>
-                                </div>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="projectType[]" value="Digital Transformation">
+                                    <span>Digital Transformation</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="projectType[]" value="Infrastructure">
+                                    <span>Infrastructure / Giga-Projects</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="projectType[]" value="Software Development">
+                                    <span>Software Development</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="projectType[]" value="Government">
+                                    <span>Government / Public Sector</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="projectType[]" value="Enterprise Transformation">
+                                    <span>Enterprise Transformation</span>
+                                </label>
                             </div>
                         </div>
 
@@ -1271,38 +1269,38 @@
                         <div class="form-group">
                             <label>Which challenges do you face? (Select top 3)</label>
                             <div class="checkbox-group">
-                                <div class="checkbox-item">
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="challenges[]" value="Scope Creep">
-                                    <label>Scope Creep / Changes</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Scope Creep / Changes</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="challenges[]" value="Schedule Slippage">
-                                    <label>Schedule Slippage</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Schedule Slippage</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="challenges[]" value="Budget Overruns">
-                                    <label>Budget Overruns</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Budget Overruns</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="challenges[]" value="Hidden Dependencies">
-                                    <label>Hidden Dependencies</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Hidden Dependencies</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="challenges[]" value="Late Feedback">
-                                    <label>Late Feedback</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Late Feedback</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="challenges[]" value="Manual Reporting">
-                                    <label>Manual Reporting</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Manual Reporting</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="challenges[]" value="Governance vs Agility">
-                                    <label>Governance vs Agility</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Governance vs Agility</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="challenges[]" value="Tool Fragmentation">
-                                    <label>Multiple Tools</label>
-                                </div>
+                                    <span>Multiple Tools</span>
+                                </label>
                             </div>
                         </div>
 
@@ -1310,38 +1308,38 @@
                         <div class="form-group">
                             <label>Select capabilities most relevant to you</label>
                             <div class="checkbox-group">
-                                <div class="checkbox-item">
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="capabilities[]" value="Early Feedback">
-                                    <label>Early Feedback & Alignment</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Early Feedback & Alignment</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="capabilities[]" value="Real-Time Risk">
-                                    <label>Real-Time Risk Detection</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Real-Time Risk Detection</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="capabilities[]" value="Governance Automation">
-                                    <label>Governance Automation</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Governance Automation</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="capabilities[]" value="Scope Impact">
-                                    <label>Scope Impact Analysis</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Scope Impact Analysis</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="capabilities[]" value="Dependency Management">
-                                    <label>Dependency Management</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Dependency Management</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="capabilities[]" value="Executive Reporting">
-                                    <label>Executive Reporting</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Executive Reporting</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="capabilities[]" value="Schedule Forecasting">
-                                    <label>Schedule Forecasting</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Schedule Forecasting</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="capabilities[]" value="Tool Integration">
-                                    <label>Tool Integration</label>
-                                </div>
+                                    <span>Tool Integration</span>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -1354,22 +1352,22 @@
                             <div class="form-group">
                                 <label>Typical schedule overrun in your last 3 projects</label>
                                 <div class="radio-group">
-                                    <div class="radio-item">
+                                    <label class="radio-item">
                                         <input type="radio" name="scheduleOverrun" value="0-10%">
-                                        <label>0-10%</label>
-                                    </div>
-                                    <div class="radio-item">
+                                        <span>0-10%</span>
+                                    </label>
+                                    <label class="radio-item">
                                         <input type="radio" name="scheduleOverrun" value="10-30%">
-                                        <label>10-30%</label>
-                                    </div>
-                                    <div class="radio-item">
+                                        <span>10-30%</span>
+                                    </label>
+                                    <label class="radio-item">
                                         <input type="radio" name="scheduleOverrun" value="30-50%">
-                                        <label>30-50%</label>
-                                    </div>
-                                    <div class="radio-item">
+                                        <span>30-50%</span>
+                                    </label>
+                                    <label class="radio-item">
                                         <input type="radio" name="scheduleOverrun" value="50%+">
-                                        <label>50%+</label>
-                                    </div>
+                                        <span>50%+</span>
+                                    </label>
                                 </div>
                             </div>
 
@@ -1393,38 +1391,38 @@
                         <div class="form-group">
                             <label>Tools you currently use</label>
                             <div class="checkbox-group">
-                                <div class="checkbox-item">
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="tools[]" value="Jira">
-                                    <label>Jira</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Jira</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="tools[]" value="Monday.com">
-                                    <label>Monday.com</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Monday.com</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="tools[]" value="Asana">
-                                    <label>Asana</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Asana</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="tools[]" value="ServiceNow">
-                                    <label>ServiceNow</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>ServiceNow</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="tools[]" value="Azure DevOps">
-                                    <label>Azure DevOps</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Azure DevOps</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="tools[]" value="MS Project">
-                                    <label>MS Project</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>MS Project</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="tools[]" value="Smartsheet">
-                                    <label>Smartsheet</label>
-                                </div>
-                                <div class="checkbox-item">
+                                    <span>Smartsheet</span>
+                                </label>
+                                <label class="checkbox-item">
                                     <input type="checkbox" name="tools[]" value="Other">
-                                    <label>Other</label>
-                                </div>
+                                    <span>Other</span>
+                                </label>
                             </div>
                         </div>
 
@@ -1436,22 +1434,22 @@
                         <div class="form-group">
                             <label>How interested are you?</label>
                             <div class="radio-group">
-                                <div class="radio-item">
+                                <label class="radio-item">
                                     <input type="radio" name="interest" value="Very interested - pilot opportunity" required>
-                                    <label>Very interested (pilot)</label>
-                                </div>
-                                <div class="radio-item">
+                                    <span>Very interested (pilot)</span>
+                                </label>
+                                <label class="radio-item">
                                     <input type="radio" name="interest" value="Somewhat interested">
-                                    <label>Somewhat interested</label>
-                                </div>
-                                <div class="radio-item">
+                                    <span>Somewhat interested</span>
+                                </label>
+                                <label class="radio-item">
                                     <input type="radio" name="interest" value="Curious - exploring">
-                                    <label>Curious</label>
-                                </div>
-                                <div class="radio-item">
+                                    <span>Curious</span>
+                                </label>
+                                <label class="radio-item">
                                     <input type="radio" name="interest" value="Not interested">
-                                    <label>Not interested</label>
-                                </div>
+                                    <span>Not interested</span>
+                                </label>
                             </div>
                         </div>
 
@@ -1461,10 +1459,10 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="checkbox-item" style="border: none; background: transparent; padding: 0; margin-top: 1rem;">
-                                <input type="checkbox" id="follow-up" name="followUp" value="yes">
-                                <label for="follow-up" style="margin: 0; padding: 0;">Contact me with insights and updates</label>
-                            </div>
+                            <label class="checkbox-item" style="border: 2px solid #e5e7eb; background: white; padding: 1rem 1.2rem; border-radius: 10px; margin-top: 1rem; cursor: pointer;">
+                                <input type="checkbox" name="followUp" value="yes">
+                                <span>Contact me with insights and updates</span>
+                            </label>
                         </div>
                     </div>
 
